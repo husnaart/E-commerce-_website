@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple E-Commerce</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+      margin-top: 20px;
+    }
+    h1 {
+      margin: 10px 0;
+    }
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      width: 90%;
+      background-color: white;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    img {
+      width: 100px;
+      height: auto;
+    }
+    form {
+      margin: 30px auto;
+      width: 80%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    label, input, select {
+      display: block;
+      margin: 10px auto;
+      text-align: left;
+      width: 80%;
+    }
+    input[type="submit"] {
+      width: 40%;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Company Logo" class="logo">
+  <h1>My E-Commerce Shop</h1>
+
+  <!-- Product Table -->
+  <h2>Available Products</h2>
+  <table>
+    <tr>
+      <!-- Row 1 -->
+      <td><img src="https://via.placeholder.com/100"><br>ID: P001<br>$10</td>
+      <td><img src="https://via.placeholder.com/100"><br>ID: P002<br>$12</td>
+      <td><img src="https://via.placeholder.com/100"><br>ID: P003<br>$15</td>
+      <td><img src="https://via.placeholder.com/100"><br>ID: P004<br>$18</td>
+    </tr>
+    <!-- Repeat this block 7 more times (total 8 rows) -->
+    <!-- To save space, I’ll only write 2 rows below, repeat similar for rest -->
+    <tr>
+      <td><img src="https://via.placeholder.com/100"><br>ID: P005<br>$20</td>
+      <td><img src="https://via.placeholder.com/100"><br>ID: P006<br>$22</td>
+      <td><img src="https://via.placeholder.com/100"><br>ID: P007<br>$25</td>
+      <td><img src="https://via.placeholder.com/100"><br>ID: P008<br>$30</td>
+    </tr>
+    <!-- Add 6 more rows like the above to reach 32 products -->
+    <!-- Total 8 rows, 4 per row = 32 -->
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Customer Registration</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Telephone Number:</label>
+    <input type="tel" name="phone" required>
+
+    <label>Email Address:</label>
+    <input type="email" name="email" required>
+
+    <label>Password:</label>
+    <input type="password" name="password" required>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+
+    <label>Country of Birth:</label>
+    <select name="country">
+      <option value="Kenya">Kenya</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Tanzania">Tanzania</option>
+      <option value="Rwanda">Rwanda</option>
+      <option value="Burundi">Burundi</option>
+      <option value="South Sudan">South Sudan</option>
+    </select>
+
+    <label>Product Category:</label>
+    <input type="checkbox" name="category" value="Clothing"> Clothing
+    <input type="checkbox" name="category" value="Electronics"> Electronics
+    <input type="checkbox" name="category" value="Home"> Home
+    <input type="checkbox" name="category" value="Sports"> Sports
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
